@@ -1,7 +1,7 @@
 .controlPanel {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1%;
+  left: 1%;
   z-index: 10;
   background-color: rgba(129, 129, 129, 0.5);
   padding-top: 10px;
@@ -9,6 +9,21 @@
   padding-right: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
+}
+.noWebGL {
+  background-color: red;
+  color: white;
+  transform:rotate(-37deg);
+  -ms-transform:rotate(-37deg);
+  -webkit-transform:rotate(-37deg);
+  position: absolute;
+  width: 100%;
+  font-size: 90;
+  top: 50%;
+  text-align: center;
+  z-index:30;
+  zoom: 4.0; -moz-transform: scale(4.0);
+  display: none;
 }
 html,body{
   font-family: sans-serif;
