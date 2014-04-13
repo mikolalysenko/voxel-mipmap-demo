@@ -28,7 +28,8 @@ var selectMip = document.querySelector("#selectMip")
 })()
 
 //Tile size parameters
-var TILE_SIZE = Math.floor(terrain.shape[0] / 16)|0
+var TILE_COUNT = 16
+var TILE_SIZE = Math.floor(terrain.shape[0] / TILE_COUNT)|0
 
 //Config variables
 var texture, shader, mesh, wireShader
@@ -106,6 +107,7 @@ shell.on("gl-render", function(t) {
   shader.uniforms.view = view
   shader.uniforms.model = model
   shader.uniforms.tileSize = TILE_SIZE
+  shader.uniforms.tileCount = TILE_COUNT
   shader.uniforms.tileMap = texture.bind()
   
   mesh.triangleVAO.bind()

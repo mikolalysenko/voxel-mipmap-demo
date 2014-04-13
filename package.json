@@ -6,7 +6,7 @@
   "dependencies": {
     "ao-mesher": "^0.2.9",
     "game-shell-orbit-camera": "^0.0.0",
-    "ao-shader": "^0.2.3",
+    "ao-shader": "^0.3.0",
     "gl-buffer": "^2.0.6",
     "gl-matrix": "^2.2.1",
     "gl-now": "^1.0.1",
